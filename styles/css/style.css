@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* Design system */
+/* spacing system */
+/* color system */
+/* Primary Colors */
+/* Primary green */
+/* Lighter green */
+/* Darker green */
+/* Secondary Colors */
+/* Secondary red */
+/* Lighter red */
+/* Darker red */
+/* Neutral Colors (Grayscale) */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "roya";
+  line-height: 1.7;
+  padding: 2.5rem;
+  direction: rtl;
+  font-size: 1.5rem;
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  70% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* تعریف فونت ها */
+@font-face {
+  font-family: "roya";
+  src: url(../../../fonts/BRoya.ttf) format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roya";
+  src: url(../../../fonts/BRoya.eot) format("eot");
+  font-weight: bold;
+  font-style: normal;
+}
+.btn:link, .btn:visited {
+  text-decoration: none;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 100px;
+  color: #000000;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.primary-heading-top {
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 2rem;
+  font-weight: 400;
+  animation: moveInRight 3s;
+}
+
+.primary-heading-bottom {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  font-weight: 400;
+  animation: moveInLeft 3s;
+  margin-bottom: 2rem;
+  /* animation-delay: 3s; */
+  /* animation-iteration-count: 2;
+  animation-direction: alternate-reverse; */
+  /* animation-fill-mode: both; */
+}
+
+.header {
+  font-family: "roya";
+  height: 95vh;
+  background-image: linear-gradient(rgba(3, 51, 36, 0.6901960784), rgba(57, 153, 124, 0.5137254902)), url(../../../Traveling-the-World.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  position: relative;
+}
+.header-text-box {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-logo-container {
+  height: 2.5rem;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+.header-logo {
+  height: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
